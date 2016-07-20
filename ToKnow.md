@@ -4,4 +4,4 @@
     * using probabilistic graphical models, 
     * adoption of Bayesian ML
     * application of fast, approximate inference algorithms. 
-  * 
+  * Variational Bayes, Expectation propagation. 
