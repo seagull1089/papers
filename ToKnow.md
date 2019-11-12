@@ -6,3 +6,4 @@
     * application of fast, approximate inference algorithms. 
   * Variational Bayes, Expectation propagation. 
   * Paper: True skill: A Bayesian skill rating system: https://www.microsoft.com/en-us/research/publication/trueskilltm-a-bayesian-skill-rating-system
+* Neural-Brane: Neural Bayesian Personalized Ranking for Attributed Network Embedding - https://arxiv.org/abs/1804.08774
