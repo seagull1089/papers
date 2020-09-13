@@ -1,0 +1,77 @@
+%%% Laboratory	 Notes
+%%% Template by Mikhail Klassen, April 2013
+%%% Contributions from Sarah Mount, May 2014
+\documentclass[a4paper]{tufte-handout}
+
+
+\newcommand{\workingDate}{\textsc{Sep $|$ 2020}}
+\newcommand{\userName}{seagull1089}
+
+\usepackage{lab_notes}
+
+\usepackage{hyperref}
+\hypersetup{
+    pdffitwindow=false,            % window fit to page
+    pdfstartview={Fit},            % fits width of page to window
+    pdftitle={Lab notes 2014},     % document title
+    pdfauthor={Your Name},         % author name
+    pdfsubject={},                 % documentf topic(s)
+    pdfnewwindow=true,             % links in new window
+    colorlinks=true,               % coloured links, not boxed
+    linkcolor=DarkScarletRed,      % colour of internal links
+    citecolor=DarkChameleon,       % colour of links to bibliography
+    filecolor=DarkPlum,            % colour of file links
+    urlcolor=DarkSkyBlue           % colour of external links
+}
+
+
+\title{Notes from the Nano Degree}
+\date{2014}
+
+\begin{document}
+\maketitle
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{projects}
+    \begin{description}
+        \item Notes from the Nano degree AI for trading.
+    \end{description}
+\end{projects}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newday{12 September 2020}
+\begin{itemize}
+    \item Survivor bias
+    \item Fundamental information
+    \item Technical Indicators: Rolling Average, threshold from volatileness.
+    \item Compute the mean and std (Bollinger bands). Use 2 standard deviation as a thumb rule.
+    \item How profitable a strategy - backtesting.
+\end{itemize}
+
+\hrulefill
+
+
+\newday{Random day}
+
+The (very fast) OCaml to Javascript compiler described in \citep{VouillonBalat13}\footnote{\url{http://ocsigen.org/js_of_ocaml/}} takes the unusual approach of compiling OCaml \textit{bytecode} to Javascript, rather than performing a source-to-source translation.
+
+\hrulefill
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%\hrulefill
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\newpage
+\bibliographystyle{plain}
+\bibliography{lab_notes}
+
+\end{document}
