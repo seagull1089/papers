@@ -40,6 +40,56 @@
 \end{projects}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newday{25 November 2020}
+\section{Momentum based trading}
+\begin{itemize}
+    \item Momentum trading: Rising prices will continue to rise, falling prices will continue to fall (Newton's laws of motion analogy)
+    \item short position(sell) vs long position (buy)
+    \item Series.nlargest similarly Series.nsmallest function: returns the items with n largest numbers.
+    \item Usage $ close_month.loc[month].nlargest(2) $. Requires a column name, and an integer to denote the n largest)
+\end{itemize}
+
+You will hear the term "alpha" throughout this program, so we want to let you know early on that the term "alpha"
+is used to mean multiple things in the investment industry.
+In mathematics, you'll see alpha refer to the significance level of a hypothesis test. In regression, you'll
+see alpha refer to the y-intercept of a straight line.
+In finance, alpha refers to multiple distinct but somewhat related ideas. The common thread among these definitions
+is that alpha is the extra value that an investment professional can add to the performance of an investment.
+One specific definition of alpha is the extra return that an actively managed fund can deliver, that exceeds
+the performance of passively investing (buy and hold) in a portfolio of stocks. Another specific definition of alpha,
+which we'll primarily focus on in this course, is that of an alpha vector.
+An alpha vector is a list of numbers, one for each stock in a portfolio,
+that gives us a signal as to the relative future performance of these stocks. You'll learn more about alpha vectors throughout term 1.
+Just to be clear, the finance community, both in academia and industry, use alpha to denote multiple ideas.
+In this lesson, you may have noticed that we use "alpha" in the statistical sense when we talked about hypothesis testing.
+We also used it when saying that we may "find alpha" in a strategy.
+This second usage refers to outsized performance, or better-than-passive performance that a finance professional
+can add to an investment. Later on, we will use it in the sense of an alpha vector,
+which is a list of numbers that give us a signal about the relative performance of each stock.
+
+\[ t, p = stats.ttest_1samp(net_returns, null_hypothesis_mean) \]
+for one tailed test, use or return  p/2.
+
+\newday{24 November 2020}
+
+Log Returns  \[ R = ln(p_t/p_{t -1} )\]
+raw return  \[ r = (p_t - p_{t-1})/ p_{t-1} \]
+
+Converting between raw returns and log returns
+
+\[ R = ln(r+1) \]
+\[ r = e^R - 1 \]
+
+Let's summarize what we just learned. These are some generally accepted reasons that quantitative analysts use log returns:
+
+Log returns can be interpreted as continuously compounded returns.
+Log returns are time-additive. The multi-period log return is simply the sum of single period log returns.
+The use of log returns prevents security prices from becoming negative in models of security returns.
+For many purposes, log returns of a security can be reasonably modeled as distributed according to a normal distribution.
+When returns and log returns are small (their absolute values are much less than 1), their values are approximately equal.
+Logarithms can help make an algorithm more numerically stable.
+Stepping back, it may not be immediately obvious why all these attributes are benefits. Don't worry about this. As you progress in this course and beyond, you will see more applications of returns and log returns in trading strategies and algorithms and you'll be able to better appreciate why they are used.
+
 
 
 
